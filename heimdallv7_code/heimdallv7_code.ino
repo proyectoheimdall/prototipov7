@@ -108,7 +108,7 @@ void loop()
   Serial.println();  
   mqttClient.update(); 
   mqttClient.publish(PubTopic, PubMessage);
-  delay(3000);
   digitalWrite(LED,LOW);
   delay(1000);
+  digitalWrite(LED,HIGH);
 }
